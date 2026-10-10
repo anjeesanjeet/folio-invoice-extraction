@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+data/*.db
+data/store/
+outputs/eval_work/
+outputs/invoices.csv
+outputs/invoices.xlsx
+.venv/
+venv/

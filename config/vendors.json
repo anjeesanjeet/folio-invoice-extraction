@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Northwind Office Supply",
+    "aliases": [],
+    "invoice_number_pattern": "INV\\d{4}",
+    "currency": "USD"
+  },
+  {
+    "name": "Cobalt Cloud Services LLC",
+    "aliases": [],
+    "invoice_number_pattern": "INV\\d{4}",
+    "currency": "USD"
+  },
+  {
+    "name": "Pinecrest Print & Signs",
+    "aliases": [],
+    "invoice_number_pattern": "INV\\d{4}",
+    "currency": "USD"
+  },
+  {
+    "name": "Sharma Packaging Pvt. Ltd.",
+    "aliases": [],
+    "invoice_number_pattern": "SPL/26-27/\\d{3}",
+    "currency": "INR"
+  },
+  {
+    "name": "Kaveri Logistics LLP",
+    "aliases": [],
+    "invoice_number_pattern": "SPL/26-27/\\d{3}",
+    "currency": "INR"
+  },
+  {
+    "name": "Ganga Textiles",
+    "aliases": [],
+    "invoice_number_pattern": "SPL/26-27/\\d{3}",
+    "currency": "INR"
+  },
+  {
+    "name": "Brandt Maschinenbau GmbH",
+    "aliases": [],
+    "invoice_number_pattern": "RE-\\d{4}",
+    "currency": "EUR"
+  },
+  {
+    "name": "Atelier Lumiere SARL",
+    "aliases": [],
+    "invoice_number_pattern": "FA\\d{4}",
+    "currency": "EUR"
+  },
+  {
+    "name": "Harbourside Digital Ltd",
+    "aliases": [],
+    "invoice_number_pattern": "HD-\\d{4}",
+    "currency": "GBP"
+  }
+]

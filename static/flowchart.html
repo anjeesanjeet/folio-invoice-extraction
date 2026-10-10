@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Folio: how it works</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/folio.css">
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<style>
+  .page { padding: 44px 48px 80px; max-width: 1300px; }
+  .controls { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 18px 0 24px; }
+  select, input { font: 14px var(--sans); background: var(--panel); color: var(--paper); border: 1px solid var(--rule-strong); border-radius: 4px; padding: 7px 10px; }
+  .canvas { overflow-x: auto; } .canvas svg { max-width: 100%; height: auto; }
+  body.export .rail, body.export .chrome { display: none; } body.export .shell { display: block; } body.export .page { padding: 48px; max-width: none; }
+  .x-title { display: none; font: italic 400 38px var(--serif); margin-bottom: 26px; } body.export .x-title { display: block; }
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="rail"><div class="brand">Folio<small>Invoice extraction you can audit</small></div><nav><a href="/review" >Review</a><a href="/dashboard" >Results</a><a href="/flowchart" aria-current="page">How it works</a></nav><div class="foot" id="railFoot"></div></aside>
+<main class="page">
+  <div class="chrome">
+    <h1>How Folio works</h1>
+    <p class="muted">Drawn from the pipeline code and the processing log of real documents. Nothing here is drawn by hand.</p>
+    <div class="controls">
+      <select id="view"><option value="pipeline">Pipeline and checks</option><option value="trace">One document's trace</option></select>
+      <input id="doc" placeholder="Document id (blank = latest)" size="26" hidden>
+      <button id="draw" type="button">Draw</button><button id="dl" type="button" class="line">Download SVG</button>
+    </div>
+  </div>
+  <div class="x-title" id="xTitle"></div>
+  <div class="canvas" id="canvas"></div>
+</main>
+</div>
+<script>
+  const q = new URLSearchParams(location.search);
+  if (q.get("export") === "1") document.body.classList.add("export");
+  mermaid.initialize({ startOnLoad: false, theme: "base", securityLevel: "loose",
+    themeVariables: { darkMode: true, background: "#0E1014", fontFamily: "IBM Plex Sans, Segoe UI, sans-serif", fontSize: "15px",
+      primaryColor: "#171A21", primaryTextColor: "#EEE9DF", primaryBorderColor: "#5A606B", lineColor: "#8C929C",
+      clusterBkg: "#111318", clusterBorder: "#2A2F38", edgeLabelBackground: "#0E1014", titleColor: "#9097A3" },
+    flowchart: { curve: "basis", htmlLabels: true } });
+  const view = document.getElementById("view"), doc = document.getElementById("doc"), canvas = document.getElementById("canvas");
+  view.value = q.get("view") || "pipeline"; doc.value = q.get("doc") || "";
+  const sync = () => { doc.hidden = view.value !== "trace"; };
+  view.onchange = () => { sync(); draw(); };
+  document.getElementById("draw").onclick = draw;
+  document.getElementById("dl").onclick = () => {
+    const svg = canvas.querySelector("svg"); if (!svg) return;
+    Object.assign(document.createElement("a"), { href: URL.createObjectURL(new Blob([svg.outerHTML], { type: "image/svg+xml" })), download: `folio-${view.value}.svg` }).click();
+  };
+  async function draw() {
+    window.__ready = false;
+    document.getElementById("xTitle").textContent = view.value === "trace" ? "Folio: one document, step by step" : "Folio: pipeline and checks";
+    canvas.innerHTML = '<p class="muted">Drawing…</p>';
+    try {
+      const p = new URLSearchParams({ view: view.value });
+      if (view.value === "trace" && doc.value.trim()) p.set("doc_id", doc.value.trim());
+      const d = await (await fetch("/api/flowchart?" + p)).json();
+      canvas.innerHTML = d.mermaid ? (await mermaid.render("g" + Date.now(), d.mermaid)).svg : '<p class="muted">No document yet. Upload one on the review page.</p>';
+    } catch (e) { canvas.innerHTML = '<p class="muted">Could not draw: ' + (e.message || e) + '</p>'; }
+    finally { await document.fonts?.ready; window.__ready = true; }
+  }
+  sync(); draw();
+</script>
+</body>
+</html>

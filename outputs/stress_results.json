@@ -1,0 +1,3577 @@
+{
+  "documents": 28,
+  "base_from_model": 38,
+  "overall": {
+    "n": 288,
+    "caught": 264,
+    "rate": 0.9167
+  },
+  "by_kind": {
+    "digital": {
+      "n": 165,
+      "caught": 165,
+      "rate": 1.0
+    },
+    "scan": {
+      "n": 123,
+      "caught": 99,
+      "rate": 0.8049
+    }
+  },
+  "by_mutation": [
+    {
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "n": 28,
+      "caught": 28,
+      "rate": 1.0,
+      "digital": {
+        "n": 16,
+        "caught": 16,
+        "rate": 1.0
+      },
+      "scan": {
+        "n": 12,
+        "caught": 12,
+        "rate": 1.0
+      },
+      "checks": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "n": 28,
+      "caught": 28,
+      "rate": 1.0,
+      "digital": {
+        "n": 16,
+        "caught": 16,
+        "rate": 1.0
+      },
+      "scan": {
+        "n": 12,
+        "caught": 12,
+        "rate": 1.0
+      },
+      "checks": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "n": 28,
+      "caught": 28,
+      "rate": 1.0,
+      "digital": {
+        "n": 16,
+        "caught": 16,
+        "rate": 1.0
+      },
+      "scan": {
+        "n": 12,
+        "caught": 12,
+        "rate": 1.0
+      },
+      "checks": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "n": 28,
+      "caught": 28,
+      "rate": 1.0,
+      "digital": {
+        "n": 16,
+        "caught": 16,
+        "rate": 1.0
+      },
+      "scan": {
+        "n": 12,
+        "caught": 12,
+        "rate": 1.0
+      },
+      "checks": [
+        "in_document",
+        "tax_rate",
+        "total_math"
+      ]
+    },
+    {
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "n": 28,
+      "caught": 28,
+      "rate": 1.0,
+      "digital": {
+        "n": 16,
+        "caught": 16,
+        "rate": 1.0
+      },
+      "scan": {
+        "n": 12,
+        "caught": 12,
+        "rate": 1.0
+      },
+      "checks": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "n": 28,
+      "caught": 28,
+      "rate": 1.0,
+      "digital": {
+        "n": 16,
+        "caught": 16,
+        "rate": 1.0
+      },
+      "scan": {
+        "n": 12,
+        "caught": 12,
+        "rate": 1.0
+      },
+      "checks": [
+        "items_sum"
+      ]
+    },
+    {
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "n": 28,
+      "caught": 28,
+      "rate": 1.0,
+      "digital": {
+        "n": 16,
+        "caught": 16,
+        "rate": 1.0
+      },
+      "scan": {
+        "n": 12,
+        "caught": 12,
+        "rate": 1.0
+      },
+      "checks": [
+        "evidence_match"
+      ]
+    },
+    {
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "n": 28,
+      "caught": 16,
+      "rate": 0.5714,
+      "digital": {
+        "n": 16,
+        "caught": 16,
+        "rate": 1.0
+      },
+      "scan": {
+        "n": 12,
+        "caught": 0,
+        "rate": 0.0
+      },
+      "checks": [
+        "in_document"
+      ]
+    },
+    {
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "n": 28,
+      "caught": 16,
+      "rate": 0.5714,
+      "digital": {
+        "n": 16,
+        "caught": 16,
+        "rate": 1.0
+      },
+      "scan": {
+        "n": 12,
+        "caught": 0,
+        "rate": 0.0
+      },
+      "checks": [
+        "in_document",
+        "number_format"
+      ]
+    },
+    {
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "n": 28,
+      "caught": 28,
+      "rate": 1.0,
+      "digital": {
+        "n": 16,
+        "caught": 16,
+        "rate": 1.0
+      },
+      "scan": {
+        "n": 12,
+        "caught": 12,
+        "rate": 1.0
+      },
+      "checks": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "mutation": "Discount missed",
+      "type": "misread",
+      "n": 8,
+      "caught": 8,
+      "rate": 1.0,
+      "digital": {
+        "n": 5,
+        "caught": 5,
+        "rate": 1.0
+      },
+      "scan": {
+        "n": 3,
+        "caught": 3,
+        "rate": 1.0
+      },
+      "checks": [
+        "total_math"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "file": "INV001.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV001.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV001.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV001.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV001.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV001.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV001.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV001.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV001.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "number_format"
+      ]
+    },
+    {
+      "file": "INV001.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV002.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV002.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV002.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV002.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV002.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV002.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV002.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV002.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV002.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV002.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV003.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV003.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV003.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV003.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "tax_rate",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV003.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV003.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV003.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV003.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV003.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "number_format"
+      ]
+    },
+    {
+      "file": "INV003.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV004.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV004.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV004.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV004.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV004.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV004.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV004.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV004.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV004.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV004.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV005.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV005.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV005.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV005.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "tax_rate",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV005.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV005.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV005.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV005.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV005.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "number_format"
+      ]
+    },
+    {
+      "file": "INV005.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV006.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV006.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV006.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV006.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV006.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV006.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV006.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV006.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV006.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV006.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV007.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV007.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV007.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV007.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV007.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV007.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV007.jpg",
+      "doc_kind": "scan",
+      "mutation": "Discount missed",
+      "type": "misread",
+      "field": "discount",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV007.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV007.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV007.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV007.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV009.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV009.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV009.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV009.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV009.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV009.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV009.jpg",
+      "doc_kind": "scan",
+      "mutation": "Discount missed",
+      "type": "misread",
+      "field": "discount",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV009.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV009.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV009.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV009.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV010.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV010.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV010.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV010.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "tax_rate",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV010.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV010.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV010.pdf",
+      "doc_kind": "digital",
+      "mutation": "Discount missed",
+      "type": "misread",
+      "field": "discount",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV010.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV010.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV010.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV010.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV011.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV011.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV011.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV011.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV011.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV011.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV011.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV011.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV011.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV011.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV012.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV012.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV012.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV012.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "tax_rate",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV012.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV012.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV012.jpg",
+      "doc_kind": "scan",
+      "mutation": "Discount missed",
+      "type": "misread",
+      "field": "discount",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV012.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV012.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV012.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV012.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV013.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV013.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV013.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV013.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV013.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV013.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV013.pdf",
+      "doc_kind": "digital",
+      "mutation": "Discount missed",
+      "type": "misread",
+      "field": "discount",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV013.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV013.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV013.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV013.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV014.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV014.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV014.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV014.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "tax_rate",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV014.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV014.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV014.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV014.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV014.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV014.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV015.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV015.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV015.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV015.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV015.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV015.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV015.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV015.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV015.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV015.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV016.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV016.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV016.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV016.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV016.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV016.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV016.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV016.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV016.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV016.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV017.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV017.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV017.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV017.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV017.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV017.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV017.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV017.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV017.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV017.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV018.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV018.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV018.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV018.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV018.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV018.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV018.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV018.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV018.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "number_format"
+      ]
+    },
+    {
+      "file": "INV018.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV019.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV019.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV019.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV019.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV019.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV019.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV019.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV019.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV019.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV019.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV020.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV020.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV020.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV020.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV020.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV020.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV020.pdf",
+      "doc_kind": "digital",
+      "mutation": "Discount missed",
+      "type": "misread",
+      "field": "discount",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV020.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV020.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV020.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV020.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV021.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV021.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV021.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV021.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV021.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV021.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV021.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV021.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV021.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV021.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV022.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV022.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV022.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV022.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV022.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV022.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV022.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV022.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV022.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV022.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV024.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV024.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV024.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV024.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV024.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV024.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV024.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV024.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV024.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV024.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV025.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV025.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV025.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV025.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV025.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV025.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV025.pdf",
+      "doc_kind": "digital",
+      "mutation": "Discount missed",
+      "type": "misread",
+      "field": "discount",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV025.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV025.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV025.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "number_format"
+      ]
+    },
+    {
+      "file": "INV025.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV026.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV026.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV026.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV026.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV026.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV026.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV026.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV026.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV026.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "number_format"
+      ]
+    },
+    {
+      "file": "INV026.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV027.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV027.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV027.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV027.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV027.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV027.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV027.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV027.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV027.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV027.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV028.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV028.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV028.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV028.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "tax_rate",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV028.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV028.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV028.pdf",
+      "doc_kind": "digital",
+      "mutation": "Discount missed",
+      "type": "misread",
+      "field": "discount",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV028.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV028.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV028.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV028.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV029.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV029.jpg",
+      "doc_kind": "scan",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV029.jpg",
+      "doc_kind": "scan",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV029.jpg",
+      "doc_kind": "scan",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV029.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV029.jpg",
+      "doc_kind": "scan",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV029.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV029.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV029.jpg",
+      "doc_kind": "scan",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": false,
+      "caught_by": []
+    },
+    {
+      "file": "INV029.jpg",
+      "doc_kind": "scan",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "vendor_known"
+      ]
+    },
+    {
+      "file": "INV030.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: value slip",
+      "type": "slip",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "evidence_match",
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV030.pdf",
+      "doc_kind": "digital",
+      "mutation": "Total: digit misread",
+      "type": "misread",
+      "field": "total",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV030.pdf",
+      "doc_kind": "digital",
+      "mutation": "Subtotal: decimal shift",
+      "type": "misread",
+      "field": "subtotal",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV030.pdf",
+      "doc_kind": "digital",
+      "mutation": "Tax: digit misread",
+      "type": "misread",
+      "field": "tax",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "total_math"
+      ]
+    },
+    {
+      "file": "INV030.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line amount: digit misread",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "items_sum",
+        "line_math"
+      ]
+    },
+    {
+      "file": "INV030.pdf",
+      "doc_kind": "digital",
+      "mutation": "Line item dropped",
+      "type": "misread",
+      "field": "line_items",
+      "caught": true,
+      "caught_by": [
+        "items_sum"
+      ]
+    },
+    {
+      "file": "INV030.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: conversion slip",
+      "type": "slip",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "evidence_match"
+      ]
+    },
+    {
+      "file": "INV030.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice date: misread",
+      "type": "misread",
+      "field": "invoice_date",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV030.pdf",
+      "doc_kind": "digital",
+      "mutation": "Invoice number: digit misread",
+      "type": "misread",
+      "field": "invoice_number",
+      "caught": true,
+      "caught_by": [
+        "in_document"
+      ]
+    },
+    {
+      "file": "INV030.pdf",
+      "doc_kind": "digital",
+      "mutation": "Vendor name: misread",
+      "type": "misread",
+      "field": "vendor",
+      "caught": true,
+      "caught_by": [
+        "in_document",
+        "vendor_known"
+      ]
+    }
+  ]
+}

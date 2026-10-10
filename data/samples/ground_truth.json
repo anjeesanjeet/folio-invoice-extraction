@@ -1,0 +1,1574 @@
+[
+  {
+    "file": "INV001.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "classic",
+    "country": "IN",
+    "vendor": "Ganga Textiles",
+    "invoice_number": "SPL/26-27/171",
+    "invoice_date": "2026-03-25",
+    "due_date": "2026-04-09",
+    "currency": "INR",
+    "subtotal": 1087.92,
+    "discount": 0.0,
+    "tax": 130.55,
+    "total": 1218.47,
+    "line_items": [
+      {
+        "description": "Packing tape (pack of 12)",
+        "quantity": 1,
+        "unit_price": 584.25,
+        "amount": 584.25
+      },
+      {
+        "description": "Cotton fabric, per metre",
+        "quantity": 3,
+        "unit_price": 167.89,
+        "amount": 503.67
+      }
+    ]
+  },
+  {
+    "file": "INV002.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "classic",
+    "country": "US",
+    "vendor": "Northwind Office Supply",
+    "invoice_number": "INV3961",
+    "invoice_date": "2026-07-14",
+    "due_date": null,
+    "currency": "USD",
+    "subtotal": 6123.09,
+    "discount": 0.0,
+    "tax": 520.46,
+    "total": 6643.55,
+    "line_items": [
+      {
+        "description": "Support hours",
+        "quantity": 4,
+        "unit_price": 93.46,
+        "amount": 373.84
+      },
+      {
+        "description": "Cloud hosting, monthly plan",
+        "quantity": 25,
+        "unit_price": 229.97,
+        "amount": 5749.25
+      }
+    ]
+  },
+  {
+    "file": "INV003.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "band",
+    "country": "IN",
+    "vendor": "Sharma Packaging Pvt. Ltd.",
+    "invoice_number": "SPL/26-27/875",
+    "invoice_date": "2026-08-26",
+    "due_date": null,
+    "currency": "INR",
+    "subtotal": 10861.42,
+    "discount": 0.0,
+    "tax": 1955.06,
+    "total": 12816.48,
+    "line_items": [
+      {
+        "description": "Pallet rental, per day",
+        "quantity": 3,
+        "unit_price": 293.24,
+        "amount": 879.72
+      },
+      {
+        "description": "Freight: Pune to Mumbai",
+        "quantity": 1,
+        "unit_price": 7839.31,
+        "amount": 7839.31
+      },
+      {
+        "description": "Courier charges, express",
+        "quantity": 1,
+        "unit_price": 1307.36,
+        "amount": 1307.36
+      },
+      {
+        "description": "Bubble wrap roll, 50 m",
+        "quantity": 1,
+        "unit_price": 664.16,
+        "amount": 664.16
+      },
+      {
+        "description": "Cotton fabric, per metre",
+        "quantity": 1,
+        "unit_price": 170.87,
+        "amount": 170.87
+      }
+    ]
+  },
+  {
+    "file": "INV004.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "band",
+    "country": "GB",
+    "vendor": "Harbourside Digital Ltd",
+    "invoice_number": "HD-8564",
+    "invoice_date": "2026-06-23",
+    "due_date": "2026-08-07",
+    "currency": "GBP",
+    "subtotal": 6601.42,
+    "discount": 0.0,
+    "tax": 1320.28,
+    "total": 7921.7,
+    "line_items": [
+      {
+        "description": "Design hours",
+        "quantity": 12,
+        "unit_price": 88.35,
+        "amount": 1060.2
+      },
+      {
+        "description": "Hosting, annual",
+        "quantity": 1,
+        "unit_price": 328.37,
+        "amount": 328.37
+      },
+      {
+        "description": "Website maintenance, monthly",
+        "quantity": 4,
+        "unit_price": 463.24,
+        "amount": 1852.96
+      },
+      {
+        "description": "Content writing, per article",
+        "quantity": 12,
+        "unit_price": 172.25,
+        "amount": 2067.0
+      },
+      {
+        "description": "SEO audit",
+        "quantity": 1,
+        "unit_price": 1292.89,
+        "amount": 1292.89
+      }
+    ]
+  },
+  {
+    "file": "INV005.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "compact",
+    "country": "IN",
+    "vendor": "Kaveri Logistics LLP",
+    "invoice_number": "SPL/26-27/385",
+    "invoice_date": "2026-03-20",
+    "due_date": "2026-04-19",
+    "currency": "INR",
+    "subtotal": 10430.38,
+    "discount": 0.0,
+    "tax": 1877.47,
+    "total": 12307.85,
+    "line_items": [
+      {
+        "description": "Freight: Pune to Mumbai",
+        "quantity": 1,
+        "unit_price": 7877.13,
+        "amount": 7877.13
+      },
+      {
+        "description": "Warehouse handling charges",
+        "quantity": 1,
+        "unit_price": 2553.25,
+        "amount": 2553.25
+      }
+    ]
+  },
+  {
+    "file": "INV006.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "compact",
+    "country": "US",
+    "vendor": "Pinecrest Print & Signs",
+    "invoice_number": "INV3056",
+    "invoice_date": "2026-02-18",
+    "due_date": "2026-04-04",
+    "currency": "USD",
+    "subtotal": 8473.76,
+    "discount": 0.0,
+    "tax": 699.09,
+    "total": 9172.85,
+    "line_items": [
+      {
+        "description": "Printer paper, A4 (box of 10 reams)",
+        "quantity": 2,
+        "unit_price": 40.48,
+        "amount": 80.96
+      },
+      {
+        "description": "Standing desk frame",
+        "quantity": 1,
+        "unit_price": 382.8,
+        "amount": 382.8
+      },
+      {
+        "description": "Ergonomic office chair",
+        "quantity": 25,
+        "unit_price": 320.4,
+        "amount": 8010.0
+      }
+    ]
+  },
+  {
+    "file": "INV007.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "compact",
+    "country": "DE",
+    "vendor": "Brandt Maschinenbau GmbH",
+    "invoice_number": "RE-3478",
+    "invoice_date": "2026-07-16",
+    "due_date": "2026-08-15",
+    "currency": "EUR",
+    "subtotal": 463.26,
+    "discount": 23.16,
+    "tax": 83.62,
+    "total": 523.72,
+    "line_items": [
+      {
+        "description": "Hydraulic seal kit",
+        "quantity": 3,
+        "unit_price": 85.37,
+        "amount": 256.11
+      },
+      {
+        "description": "Bearing assembly, type B-40",
+        "quantity": 1,
+        "unit_price": 207.15,
+        "amount": 207.15
+      }
+    ]
+  },
+  {
+    "file": "INV008.pdf",
+    "kind": "digital",
+    "trap": true,
+    "layout": "classic",
+    "country": "IN",
+    "vendor": "Sharma Packaging Pvt. Ltd.",
+    "invoice_number": "SPL/26-27/628",
+    "invoice_date": "2026-07-17",
+    "due_date": "2026-08-16",
+    "currency": "INR",
+    "subtotal": 9850.98,
+    "discount": 0.0,
+    "tax": 1773.18,
+    "total": 11634.16,
+    "line_items": [
+      {
+        "description": "Pallet rental, per day",
+        "quantity": 12,
+        "unit_price": 318.75,
+        "amount": 3825.0
+      },
+      {
+        "description": "Corrugated boxes, 5-ply",
+        "quantity": 4,
+        "unit_price": 34.85,
+        "amount": 139.4
+      },
+      {
+        "description": "Courier charges, express",
+        "quantity": 1,
+        "unit_price": 1312.42,
+        "amount": 1312.42
+      },
+      {
+        "description": "Warehouse handling charges",
+        "quantity": 2,
+        "unit_price": 2287.08,
+        "amount": 4574.16
+      }
+    ]
+  },
+  {
+    "file": "INV009.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "band",
+    "country": "US",
+    "vendor": "Cobalt Cloud Services LLC",
+    "invoice_number": "INV5577",
+    "invoice_date": "2026-05-24",
+    "due_date": null,
+    "currency": "USD",
+    "subtotal": 2783.42,
+    "discount": 139.17,
+    "tax": 234.68,
+    "total": 2878.93,
+    "line_items": [
+      {
+        "description": "Managed backup, 1 TB",
+        "quantity": 3,
+        "unit_price": 62.61,
+        "amount": 187.83
+      },
+      {
+        "description": "Business cards (500)",
+        "quantity": 10,
+        "unit_price": 38.51,
+        "amount": 385.1
+      },
+      {
+        "description": "Standing desk frame",
+        "quantity": 3,
+        "unit_price": 387.27,
+        "amount": 1161.81
+      },
+      {
+        "description": "Toner cartridge, black",
+        "quantity": 12,
+        "unit_price": 87.39,
+        "amount": 1048.68
+      }
+    ]
+  },
+  {
+    "file": "INV010.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "compact",
+    "country": "IN",
+    "vendor": "Ganga Textiles",
+    "invoice_number": "SPL/26-27/188",
+    "invoice_date": "2026-06-15",
+    "due_date": "2026-06-30",
+    "currency": "INR",
+    "subtotal": 12017.08,
+    "discount": 1201.71,
+    "tax": 1297.84,
+    "total": 12113.21,
+    "line_items": [
+      {
+        "description": "Warehouse handling charges",
+        "quantity": 1,
+        "unit_price": 2596.42,
+        "amount": 2596.42
+      },
+      {
+        "description": "Freight: Pune to Mumbai",
+        "quantity": 1,
+        "unit_price": 8267.44,
+        "amount": 8267.44
+      },
+      {
+        "description": "Bubble wrap roll, 50 m",
+        "quantity": 1,
+        "unit_price": 693.5,
+        "amount": 693.5
+      },
+      {
+        "description": "Pallet rental, per day",
+        "quantity": 1,
+        "unit_price": 346.23,
+        "amount": 346.23
+      },
+      {
+        "description": "Corrugated boxes, 5-ply",
+        "quantity": 3,
+        "unit_price": 37.83,
+        "amount": 113.49
+      }
+    ]
+  },
+  {
+    "file": "INV011.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "classic",
+    "country": "US",
+    "vendor": "Pinecrest Print & Signs",
+    "invoice_number": "INV8107",
+    "invoice_date": "2026-03-13",
+    "due_date": "2026-04-12",
+    "currency": "USD",
+    "subtotal": 10523.15,
+    "discount": 0.0,
+    "tax": 868.16,
+    "total": 11391.31,
+    "line_items": [
+      {
+        "description": "Standing desk frame",
+        "quantity": 25,
+        "unit_price": 415.98,
+        "amount": 10399.5
+      },
+      {
+        "description": "Business cards (500)",
+        "quantity": 1,
+        "unit_price": 33.18,
+        "amount": 33.18
+      },
+      {
+        "description": "Toner cartridge, black",
+        "quantity": 1,
+        "unit_price": 90.47,
+        "amount": 90.47
+      }
+    ]
+  },
+  {
+    "file": "INV012.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "compact",
+    "country": "GB",
+    "vendor": "Harbourside Digital Ltd",
+    "invoice_number": "HD-4000",
+    "invoice_date": "2026-04-23",
+    "due_date": "2026-05-23",
+    "currency": "GBP",
+    "subtotal": 16444.89,
+    "discount": 1644.49,
+    "tax": 2960.08,
+    "total": 17760.48,
+    "line_items": [
+      {
+        "description": "Website maintenance, monthly",
+        "quantity": 25,
+        "unit_price": 442.86,
+        "amount": 11071.5
+      },
+      {
+        "description": "Content writing, per article",
+        "quantity": 25,
+        "unit_price": 166.71,
+        "amount": 4167.75
+      },
+      {
+        "description": "SEO audit",
+        "quantity": 1,
+        "unit_price": 1205.64,
+        "amount": 1205.64
+      }
+    ]
+  },
+  {
+    "file": "INV013.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "compact",
+    "country": "US",
+    "vendor": "Cobalt Cloud Services LLC",
+    "invoice_number": "INV8411",
+    "invoice_date": "2026-09-14",
+    "due_date": "2026-10-29",
+    "currency": "USD",
+    "subtotal": 7929.6,
+    "discount": 792.96,
+    "tax": 633.38,
+    "total": 7770.02,
+    "line_items": [
+      {
+        "description": "Toner cartridge, black",
+        "quantity": 1,
+        "unit_price": 94.89,
+        "amount": 94.89
+      },
+      {
+        "description": "Printer paper, A4 (box of 10 reams)",
+        "quantity": 25,
+        "unit_price": 42.09,
+        "amount": 1052.25
+      },
+      {
+        "description": "Support hours",
+        "quantity": 1,
+        "unit_price": 99.94,
+        "amount": 99.94
+      },
+      {
+        "description": "Ergonomic office chair",
+        "quantity": 1,
+        "unit_price": 325.27,
+        "amount": 325.27
+      },
+      {
+        "description": "Cloud hosting, monthly plan",
+        "quantity": 25,
+        "unit_price": 254.29,
+        "amount": 6357.25
+      }
+    ]
+  },
+  {
+    "file": "INV014.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "classic",
+    "country": "FR",
+    "vendor": "Atelier Lumiere SARL",
+    "invoice_number": "FA8663",
+    "invoice_date": "2026-03-26",
+    "due_date": "2026-04-25",
+    "currency": "EUR",
+    "subtotal": 1352.41,
+    "discount": 0.0,
+    "tax": 270.48,
+    "total": 1622.89,
+    "line_items": [
+      {
+        "description": "Bearing assembly, type B-40",
+        "quantity": 3,
+        "unit_price": 221.25,
+        "amount": 663.75
+      },
+      {
+        "description": "Hydraulic seal kit",
+        "quantity": 1,
+        "unit_price": 93.26,
+        "amount": 93.26
+      },
+      {
+        "description": "Design consultation, per hour",
+        "quantity": 2,
+        "unit_price": 130.55,
+        "amount": 261.1
+      },
+      {
+        "description": "Brass fittings set",
+        "quantity": 5,
+        "unit_price": 66.86,
+        "amount": 334.3
+      }
+    ]
+  },
+  {
+    "file": "INV015.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "classic",
+    "country": "US",
+    "vendor": "Pinecrest Print & Signs",
+    "invoice_number": "INV2053",
+    "invoice_date": "2026-07-25",
+    "due_date": "2026-08-09",
+    "currency": "USD",
+    "subtotal": 7574.65,
+    "discount": 0.0,
+    "tax": 624.91,
+    "total": 8199.56,
+    "line_items": [
+      {
+        "description": "Business cards (500)",
+        "quantity": 1,
+        "unit_price": 35.56,
+        "amount": 35.56
+      },
+      {
+        "description": "Toner cartridge, black",
+        "quantity": 12,
+        "unit_price": 88.92,
+        "amount": 1067.04
+      },
+      {
+        "description": "Support hours",
+        "quantity": 1,
+        "unit_price": 92.8,
+        "amount": 92.8
+      },
+      {
+        "description": "Cloud hosting, monthly plan",
+        "quantity": 25,
+        "unit_price": 255.17,
+        "amount": 6379.25
+      }
+    ]
+  },
+  {
+    "file": "INV016.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "compact",
+    "country": "US",
+    "vendor": "Northwind Office Supply",
+    "invoice_number": "INV2372",
+    "invoice_date": "2026-03-21",
+    "due_date": null,
+    "currency": "USD",
+    "subtotal": 2092.87,
+    "discount": 0.0,
+    "tax": 177.89,
+    "total": 2270.76,
+    "line_items": [
+      {
+        "description": "Vinyl banner, 3 x 6 ft",
+        "quantity": 12,
+        "unit_price": 122.73,
+        "amount": 1472.76
+      },
+      {
+        "description": "Ergonomic office chair",
+        "quantity": 1,
+        "unit_price": 314.46,
+        "amount": 314.46
+      },
+      {
+        "description": "Toner cartridge, black",
+        "quantity": 2,
+        "unit_price": 88.65,
+        "amount": 177.3
+      },
+      {
+        "description": "Support hours",
+        "quantity": 1,
+        "unit_price": 90.61,
+        "amount": 90.61
+      },
+      {
+        "description": "Business cards (500)",
+        "quantity": 1,
+        "unit_price": 37.74,
+        "amount": 37.74
+      }
+    ]
+  },
+  {
+    "file": "INV017.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "band",
+    "country": "US",
+    "vendor": "Northwind Office Supply",
+    "invoice_number": "INV4372",
+    "invoice_date": "2026-06-26",
+    "due_date": null,
+    "currency": "USD",
+    "subtotal": 1266.14,
+    "discount": 0.0,
+    "tax": 107.62,
+    "total": 1373.76,
+    "line_items": [
+      {
+        "description": "Cloud hosting, monthly plan",
+        "quantity": 3,
+        "unit_price": 270.82,
+        "amount": 812.46
+      },
+      {
+        "description": "Printer paper, A4 (box of 10 reams)",
+        "quantity": 2,
+        "unit_price": 40.48,
+        "amount": 80.96
+      },
+      {
+        "description": "Vinyl banner, 3 x 6 ft",
+        "quantity": 2,
+        "unit_price": 110.96,
+        "amount": 221.92
+      },
+      {
+        "description": "Business cards (500)",
+        "quantity": 4,
+        "unit_price": 37.7,
+        "amount": 150.8
+      }
+    ]
+  },
+  {
+    "file": "INV018.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "band",
+    "country": "IN",
+    "vendor": "Kaveri Logistics LLP",
+    "invoice_number": "SPL/26-27/618",
+    "invoice_date": "2026-01-13",
+    "due_date": "2026-02-27",
+    "currency": "INR",
+    "subtotal": 4034.53,
+    "discount": 0.0,
+    "tax": 726.22,
+    "total": 4760.75,
+    "line_items": [
+      {
+        "description": "Pallet rental, per day",
+        "quantity": 1,
+        "unit_price": 330.13,
+        "amount": 330.13
+      },
+      {
+        "description": "Bubble wrap roll, 50 m",
+        "quantity": 2,
+        "unit_price": 641.18,
+        "amount": 1282.36
+      },
+      {
+        "description": "Warehouse handling charges",
+        "quantity": 1,
+        "unit_price": 2422.04,
+        "amount": 2422.04
+      }
+    ]
+  },
+  {
+    "file": "INV019.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "compact",
+    "country": "DE",
+    "vendor": "Brandt Maschinenbau GmbH",
+    "invoice_number": "RE-9289",
+    "invoice_date": "2026-06-14",
+    "due_date": null,
+    "currency": "EUR",
+    "subtotal": 2657.05,
+    "discount": 0.0,
+    "tax": 504.84,
+    "total": 3161.89,
+    "line_items": [
+      {
+        "description": "Bearing assembly, type B-40",
+        "quantity": 10,
+        "unit_price": 199.59,
+        "amount": 1995.9
+      },
+      {
+        "description": "Maintenance visit",
+        "quantity": 1,
+        "unit_price": 661.15,
+        "amount": 661.15
+      }
+    ]
+  },
+  {
+    "file": "INV020.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "compact",
+    "country": "FR",
+    "vendor": "Atelier Lumiere SARL",
+    "invoice_number": "FA5066",
+    "invoice_date": "2026-03-18",
+    "due_date": "2026-04-02",
+    "currency": "EUR",
+    "subtotal": 3020.59,
+    "discount": 151.03,
+    "tax": 573.91,
+    "total": 3443.47,
+    "line_items": [
+      {
+        "description": "Maintenance visit",
+        "quantity": 1,
+        "unit_price": 699.61,
+        "amount": 699.61
+      },
+      {
+        "description": "Brass fittings set",
+        "quantity": 4,
+        "unit_price": 67.94,
+        "amount": 271.76
+      },
+      {
+        "description": "Linen drapery, per metre",
+        "quantity": 2,
+        "unit_price": 43.66,
+        "amount": 87.32
+      },
+      {
+        "description": "Bearing assembly, type B-40",
+        "quantity": 10,
+        "unit_price": 196.19,
+        "amount": 1961.9
+      }
+    ]
+  },
+  {
+    "file": "INV021.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "compact",
+    "country": "DE",
+    "vendor": "Brandt Maschinenbau GmbH",
+    "invoice_number": "RE-9404",
+    "invoice_date": "2026-01-25",
+    "due_date": "2026-02-24",
+    "currency": "EUR",
+    "subtotal": 2951.34,
+    "discount": 0.0,
+    "tax": 560.75,
+    "total": 3512.09,
+    "line_items": [
+      {
+        "description": "Bearing assembly, type B-40",
+        "quantity": 10,
+        "unit_price": 225.31,
+        "amount": 2253.1
+      },
+      {
+        "description": "Linen drapery, per metre",
+        "quantity": 12,
+        "unit_price": 45.1,
+        "amount": 541.2
+      },
+      {
+        "description": "Hydraulic seal kit",
+        "quantity": 2,
+        "unit_price": 78.52,
+        "amount": 157.04
+      }
+    ]
+  },
+  {
+    "file": "INV022.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "band",
+    "country": "US",
+    "vendor": "Cobalt Cloud Services LLC",
+    "invoice_number": "INV9016",
+    "invoice_date": "2026-01-14",
+    "due_date": "2026-02-13",
+    "currency": "USD",
+    "subtotal": 7908.4,
+    "discount": 0.0,
+    "tax": 701.87,
+    "total": 8610.27,
+    "line_items": [
+      {
+        "description": "Ergonomic office chair",
+        "quantity": 25,
+        "unit_price": 299.44,
+        "amount": 7486.0
+      },
+      {
+        "description": "Standing desk frame",
+        "quantity": 1,
+        "unit_price": 422.4,
+        "amount": 422.4
+      }
+    ]
+  },
+  {
+    "file": "INV023.pdf",
+    "kind": "digital",
+    "trap": true,
+    "layout": "classic",
+    "country": "FR",
+    "vendor": "Atelier Lumiere SARL",
+    "invoice_number": "FA4248",
+    "invoice_date": "2026-05-15",
+    "due_date": null,
+    "currency": "EUR",
+    "subtotal": 1858.18,
+    "discount": 0.0,
+    "tax": 371.64,
+    "total": 2255.32,
+    "line_items": [
+      {
+        "description": "Brass fittings set",
+        "quantity": 12,
+        "unit_price": 71.91,
+        "amount": 862.92
+      },
+      {
+        "description": "Hydraulic seal kit",
+        "quantity": 10,
+        "unit_price": 79.09,
+        "amount": 790.9
+      },
+      {
+        "description": "Linen drapery, per metre",
+        "quantity": 4,
+        "unit_price": 51.09,
+        "amount": 204.36
+      }
+    ]
+  },
+  {
+    "file": "INV024.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "compact",
+    "country": "US",
+    "vendor": "Northwind Office Supply",
+    "invoice_number": "INV2941",
+    "invoice_date": "2026-08-14",
+    "due_date": "2026-09-28",
+    "currency": "USD",
+    "subtotal": 1882.2,
+    "discount": 0.0,
+    "tax": 159.99,
+    "total": 2042.19,
+    "line_items": [
+      {
+        "description": "Managed backup, 1 TB",
+        "quantity": 4,
+        "unit_price": 61.46,
+        "amount": 245.84
+      },
+      {
+        "description": "Standing desk frame",
+        "quantity": 4,
+        "unit_price": 409.09,
+        "amount": 1636.36
+      }
+    ]
+  },
+  {
+    "file": "INV025.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "classic",
+    "country": "IN",
+    "vendor": "Kaveri Logistics LLP",
+    "invoice_number": "SPL/26-27/503",
+    "invoice_date": "2026-08-15",
+    "due_date": null,
+    "currency": "INR",
+    "subtotal": 6466.75,
+    "discount": 646.68,
+    "tax": 1047.61,
+    "total": 6867.68,
+    "line_items": [
+      {
+        "description": "Cotton fabric, per metre",
+        "quantity": 1,
+        "unit_price": 171.74,
+        "amount": 171.74
+      },
+      {
+        "description": "Warehouse handling charges",
+        "quantity": 2,
+        "unit_price": 2285.67,
+        "amount": 4571.34
+      },
+      {
+        "description": "Bubble wrap roll, 50 m",
+        "quantity": 1,
+        "unit_price": 602.24,
+        "amount": 602.24
+      },
+      {
+        "description": "Packing tape (pack of 12)",
+        "quantity": 2,
+        "unit_price": 540.94,
+        "amount": 1081.88
+      },
+      {
+        "description": "Corrugated boxes, 5-ply",
+        "quantity": 1,
+        "unit_price": 39.55,
+        "amount": 39.55
+      }
+    ]
+  },
+  {
+    "file": "INV026.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "classic",
+    "country": "IN",
+    "vendor": "Kaveri Logistics LLP",
+    "invoice_number": "SPL/26-27/830",
+    "invoice_date": "2026-03-26",
+    "due_date": "2026-04-25",
+    "currency": "INR",
+    "subtotal": 918.18,
+    "discount": 0.0,
+    "tax": 165.27,
+    "total": 1083.45,
+    "line_items": [
+      {
+        "description": "Packing tape (pack of 12)",
+        "quantity": 1,
+        "unit_price": 567.08,
+        "amount": 567.08
+      },
+      {
+        "description": "Corrugated boxes, 5-ply",
+        "quantity": 10,
+        "unit_price": 35.11,
+        "amount": 351.1
+      }
+    ]
+  },
+  {
+    "file": "INV027.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "classic",
+    "country": "DE",
+    "vendor": "Brandt Maschinenbau GmbH",
+    "invoice_number": "RE-8008",
+    "invoice_date": "2026-02-24",
+    "due_date": null,
+    "currency": "EUR",
+    "subtotal": 2334.15,
+    "discount": 0.0,
+    "tax": 443.49,
+    "total": 2777.64,
+    "line_items": [
+      {
+        "description": "Bearing assembly, type B-40",
+        "quantity": 4,
+        "unit_price": 219.78,
+        "amount": 879.12
+      },
+      {
+        "description": "Maintenance visit",
+        "quantity": 1,
+        "unit_price": 607.91,
+        "amount": 607.91
+      },
+      {
+        "description": "Brass fittings set",
+        "quantity": 4,
+        "unit_price": 71.08,
+        "amount": 284.32
+      },
+      {
+        "description": "Design consultation, per hour",
+        "quantity": 5,
+        "unit_price": 112.56,
+        "amount": 562.8
+      }
+    ]
+  },
+  {
+    "file": "INV028.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "classic",
+    "country": "DE",
+    "vendor": "Brandt Maschinenbau GmbH",
+    "invoice_number": "RE-2231",
+    "invoice_date": "2026-08-17",
+    "due_date": "2026-09-16",
+    "currency": "EUR",
+    "subtotal": 5905.38,
+    "discount": 295.27,
+    "tax": 1065.92,
+    "total": 6676.03,
+    "line_items": [
+      {
+        "description": "Bearing assembly, type B-40",
+        "quantity": 10,
+        "unit_price": 207.31,
+        "amount": 2073.1
+      },
+      {
+        "description": "Linen drapery, per metre",
+        "quantity": 4,
+        "unit_price": 46.13,
+        "amount": 184.52
+      },
+      {
+        "description": "Hydraulic seal kit",
+        "quantity": 4,
+        "unit_price": 84.78,
+        "amount": 339.12
+      },
+      {
+        "description": "Brass fittings set",
+        "quantity": 3,
+        "unit_price": 69.13,
+        "amount": 207.39
+      },
+      {
+        "description": "Design consultation, per hour",
+        "quantity": 25,
+        "unit_price": 124.05,
+        "amount": 3101.25
+      }
+    ]
+  },
+  {
+    "file": "INV029.jpg",
+    "kind": "scan",
+    "trap": false,
+    "layout": "band",
+    "country": "DE",
+    "vendor": "Brandt Maschinenbau GmbH",
+    "invoice_number": "RE-7174",
+    "invoice_date": "2026-03-19",
+    "due_date": "2026-04-03",
+    "currency": "EUR",
+    "subtotal": 3004.99,
+    "discount": 0.0,
+    "tax": 570.95,
+    "total": 3575.94,
+    "line_items": [
+      {
+        "description": "Linen drapery, per metre",
+        "quantity": 5,
+        "unit_price": 46.16,
+        "amount": 230.8
+      },
+      {
+        "description": "Bearing assembly, type B-40",
+        "quantity": 3,
+        "unit_price": 230.57,
+        "amount": 691.71
+      },
+      {
+        "description": "Maintenance visit",
+        "quantity": 2,
+        "unit_price": 687.44,
+        "amount": 1374.88
+      },
+      {
+        "description": "Brass fittings set",
+        "quantity": 10,
+        "unit_price": 70.76,
+        "amount": 707.6
+      }
+    ]
+  },
+  {
+    "file": "INV030.pdf",
+    "kind": "digital",
+    "trap": false,
+    "layout": "classic",
+    "country": "US",
+    "vendor": "Pinecrest Print & Signs",
+    "invoice_number": "INV5070",
+    "invoice_date": "2026-09-19",
+    "due_date": "2026-10-04",
+    "currency": "USD",
+    "subtotal": 10483.02,
+    "discount": 0.0,
+    "tax": 864.85,
+    "total": 11347.87,
+    "line_items": [
+      {
+        "description": "Ergonomic office chair",
+        "quantity": 2,
+        "unit_price": 298.22,
+        "amount": 596.44
+      },
+      {
+        "description": "Standing desk frame",
+        "quantity": 12,
+        "unit_price": 450.59,
+        "amount": 5407.08
+      },
+      {
+        "description": "Managed backup, 1 TB",
+        "quantity": 12,
+        "unit_price": 53.1,
+        "amount": 637.2
+      },
+      {
+        "description": "Cloud hosting, monthly plan",
+        "quantity": 10,
+        "unit_price": 270.43,
+        "amount": 2704.3
+      },
+      {
+        "description": "Printer paper, A4 (box of 10 reams)",
+        "quantity": 25,
+        "unit_price": 45.52,
+        "amount": 1138.0
+      }
+    ]
+  },
+  {
+    "file": "INV031.jpg",
+    "kind": "hard_scan",
+    "trap": false,
+    "layout": "band",
+    "country": "US",
+    "vendor": "Cobalt Cloud Services LLC",
+    "invoice_number": "INV4140",
+    "invoice_date": "2026-09-14",
+    "due_date": "2026-09-29",
+    "currency": "USD",
+    "subtotal": 1480.64,
+    "discount": 0.0,
+    "tax": 131.41,
+    "total": 1612.05,
+    "line_items": [
+      {
+        "description": "Printer paper, A4 (box of 10 reams)",
+        "quantity": 4,
+        "unit_price": 42.74,
+        "amount": 170.96
+      },
+      {
+        "description": "Vinyl banner, 3 x 6 ft",
+        "quantity": 10,
+        "unit_price": 122.69,
+        "amount": 1226.9
+      },
+      {
+        "description": "Toner cartridge, black",
+        "quantity": 1,
+        "unit_price": 82.78,
+        "amount": 82.78
+      }
+    ]
+  },
+  {
+    "file": "INV032.jpg",
+    "kind": "hard_scan",
+    "trap": false,
+    "layout": "band",
+    "country": "GB",
+    "vendor": "Harbourside Digital Ltd",
+    "invoice_number": "HD-2328",
+    "invoice_date": "2026-05-27",
+    "due_date": "2026-06-26",
+    "currency": "GBP",
+    "subtotal": 2883.41,
+    "discount": 288.34,
+    "tax": 519.01,
+    "total": 3114.08,
+    "line_items": [
+      {
+        "description": "Hosting, annual",
+        "quantity": 3,
+        "unit_price": 326.11,
+        "amount": 978.33
+      },
+      {
+        "description": "SEO audit",
+        "quantity": 1,
+        "unit_price": 1249.12,
+        "amount": 1249.12
+      },
+      {
+        "description": "Content writing, per article",
+        "quantity": 4,
+        "unit_price": 163.99,
+        "amount": 655.96
+      }
+    ]
+  },
+  {
+    "file": "INV033.jpg",
+    "kind": "hard_scan",
+    "trap": false,
+    "layout": "band",
+    "country": "US",
+    "vendor": "Northwind Office Supply",
+    "invoice_number": "INV4628",
+    "invoice_date": "2026-06-26",
+    "due_date": "2026-07-26",
+    "currency": "USD",
+    "subtotal": 2674.38,
+    "discount": 267.44,
+    "tax": 204.59,
+    "total": 2611.53,
+    "line_items": [
+      {
+        "description": "Printer paper, A4 (box of 10 reams)",
+        "quantity": 25,
+        "unit_price": 38.82,
+        "amount": 970.5
+      },
+      {
+        "description": "Vinyl banner, 3 x 6 ft",
+        "quantity": 12,
+        "unit_price": 129.09,
+        "amount": 1549.08
+      },
+      {
+        "description": "Business cards (500)",
+        "quantity": 4,
+        "unit_price": 38.7,
+        "amount": 154.8
+      }
+    ]
+  },
+  {
+    "file": "INV034.jpg",
+    "kind": "hard_scan",
+    "trap": false,
+    "layout": "band",
+    "country": "IN",
+    "vendor": "Sharma Packaging Pvt. Ltd.",
+    "invoice_number": "SPL/26-27/288",
+    "invoice_date": "2026-08-26",
+    "due_date": null,
+    "currency": "INR",
+    "subtotal": 11808.44,
+    "discount": 590.42,
+    "tax": 2019.24,
+    "total": 13237.26,
+    "line_items": [
+      {
+        "description": "Freight: Pune to Mumbai",
+        "quantity": 1,
+        "unit_price": 7352.2,
+        "amount": 7352.2
+      },
+      {
+        "description": "Warehouse handling charges",
+        "quantity": 2,
+        "unit_price": 2228.12,
+        "amount": 4456.24
+      }
+    ]
+  },
+  {
+    "file": "INV035.jpg",
+    "kind": "hard_scan",
+    "trap": false,
+    "layout": "band",
+    "country": "US",
+    "vendor": "Pinecrest Print & Signs",
+    "invoice_number": "INV7228",
+    "invoice_date": "2026-06-19",
+    "due_date": "2026-08-03",
+    "currency": "USD",
+    "subtotal": 1967.98,
+    "discount": 0.0,
+    "tax": 162.36,
+    "total": 2130.34,
+    "line_items": [
+      {
+        "description": "Printer paper, A4 (box of 10 reams)",
+        "quantity": 5,
+        "unit_price": 46.62,
+        "amount": 233.1
+      },
+      {
+        "description": "Vinyl banner, 3 x 6 ft",
+        "quantity": 12,
+        "unit_price": 110.19,
+        "amount": 1322.28
+      },
+      {
+        "description": "Business cards (500)",
+        "quantity": 1,
+        "unit_price": 33.65,
+        "amount": 33.65
+      },
+      {
+        "description": "Ergonomic office chair",
+        "quantity": 1,
+        "unit_price": 319.23,
+        "amount": 319.23
+      },
+      {
+        "description": "Managed backup, 1 TB",
+        "quantity": 1,
+        "unit_price": 59.72,
+        "amount": 59.72
+      }
+    ]
+  },
+  {
+    "file": "INV036.jpg",
+    "kind": "hard_scan",
+    "trap": false,
+    "layout": "compact",
+    "country": "IN",
+    "vendor": "Sharma Packaging Pvt. Ltd.",
+    "invoice_number": "SPL/26-27/368",
+    "invoice_date": "2026-06-27",
+    "due_date": "2026-07-27",
+    "currency": "INR",
+    "subtotal": 6419.06,
+    "discount": 320.95,
+    "tax": 1097.66,
+    "total": 7195.77,
+    "line_items": [
+      {
+        "description": "Corrugated boxes, 5-ply",
+        "quantity": 1,
+        "unit_price": 37.05,
+        "amount": 37.05
+      },
+      {
+        "description": "Packing tape (pack of 12)",
+        "quantity": 1,
+        "unit_price": 492.76,
+        "amount": 492.76
+      },
+      {
+        "description": "Warehouse handling charges",
+        "quantity": 1,
+        "unit_price": 2283.37,
+        "amount": 2283.37
+      },
+      {
+        "description": "Bubble wrap roll, 50 m",
+        "quantity": 2,
+        "unit_price": 593.17,
+        "amount": 1186.34
+      },
+      {
+        "description": "Courier charges, express",
+        "quantity": 2,
+        "unit_price": 1209.77,
+        "amount": 2419.54
+      }
+    ]
+  },
+  {
+    "file": "INV037.jpg",
+    "kind": "hard_scan",
+    "trap": false,
+    "layout": "compact",
+    "country": "US",
+    "vendor": "Northwind Office Supply",
+    "invoice_number": "INV2294",
+    "invoice_date": "2026-04-16",
+    "due_date": "2026-05-16",
+    "currency": "USD",
+    "subtotal": 4935.18,
+    "discount": 0.0,
+    "tax": 419.49,
+    "total": 5354.67,
+    "line_items": [
+      {
+        "description": "Vinyl banner, 3 x 6 ft",
+        "quantity": 12,
+        "unit_price": 110.52,
+        "amount": 1326.24
+      },
+      {
+        "description": "Ergonomic office chair",
+        "quantity": 4,
+        "unit_price": 350.24,
+        "amount": 1400.96
+      },
+      {
+        "description": "Standing desk frame",
+        "quantity": 2,
+        "unit_price": 420.84,
+        "amount": 841.68
+      },
+      {
+        "description": "Managed backup, 1 TB",
+        "quantity": 5,
+        "unit_price": 63.26,
+        "amount": 316.3
+      },
+      {
+        "description": "Toner cartridge, black",
+        "quantity": 12,
+        "unit_price": 87.5,
+        "amount": 1050.0
+      }
+    ]
+  },
+  {
+    "file": "INV038.jpg",
+    "kind": "hard_scan",
+    "trap": false,
+    "layout": "classic",
+    "country": "US",
+    "vendor": "Cobalt Cloud Services LLC",
+    "invoice_number": "INV3837",
+    "invoice_date": "2026-01-28",
+    "due_date": "2026-02-27",
+    "currency": "USD",
+    "subtotal": 2156.79,
+    "discount": 0.0,
+    "tax": 191.42,
+    "total": 2348.21,
+    "line_items": [
+      {
+        "description": "Ergonomic office chair",
+        "quantity": 4,
+        "unit_price": 337.2,
+        "amount": 1348.8
+      },
+      {
+        "description": "Toner cartridge, black",
+        "quantity": 3,
+        "unit_price": 82.73,
+        "amount": 248.19
+      },
+      {
+        "description": "Printer paper, A4 (box of 10 reams)",
+        "quantity": 12,
+        "unit_price": 46.65,
+        "amount": 559.8
+      }
+    ]
+  },
+  {
+    "file": "INV039.jpg",
+    "kind": "hard_scan",
+    "trap": false,
+    "layout": "compact",
+    "country": "IN",
+    "vendor": "Kaveri Logistics LLP",
+    "invoice_number": "SPL/26-27/619",
+    "invoice_date": "2026-05-21",
+    "due_date": "2026-06-20",
+    "currency": "INR",
+    "subtotal": 6697.48,
+    "discount": 0.0,
+    "tax": 1205.55,
+    "total": 7903.03,
+    "line_items": [
+      {
+        "description": "Cotton fabric, per metre",
+        "quantity": 2,
+        "unit_price": 175.58,
+        "amount": 351.16
+      },
+      {
+        "description": "Bubble wrap roll, 50 m",
+        "quantity": 1,
+        "unit_price": 621.58,
+        "amount": 621.58
+      },
+      {
+        "description": "Warehouse handling charges",
+        "quantity": 2,
+        "unit_price": 2250.36,
+        "amount": 4500.72
+      },
+      {
+        "description": "Courier charges, express",
+        "quantity": 1,
+        "unit_price": 1224.02,
+        "amount": 1224.02
+      }
+    ]
+  },
+  {
+    "file": "INV040.jpg",
+    "kind": "hard_scan",
+    "trap": false,
+    "layout": "band",
+    "country": "US",
+    "vendor": "Cobalt Cloud Services LLC",
+    "invoice_number": "INV3912",
+    "invoice_date": "2026-01-28",
+    "due_date": null,
+    "currency": "USD",
+    "subtotal": 1732.91,
+    "discount": 0.0,
+    "tax": 153.8,
+    "total": 1886.71,
+    "line_items": [
+      {
+        "description": "Standing desk frame",
+        "quantity": 4,
+        "unit_price": 389.99,
+        "amount": 1559.96
+      },
+      {
+        "description": "Business cards (500)",
+        "quantity": 1,
+        "unit_price": 34.47,
+        "amount": 34.47
+      },
+      {
+        "description": "Printer paper, A4 (box of 10 reams)",
+        "quantity": 3,
+        "unit_price": 46.16,
+        "amount": 138.48
+      }
+    ]
+  }
+]
