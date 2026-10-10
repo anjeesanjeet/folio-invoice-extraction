@@ -15,110 +15,110 @@
       "total",
       "line_items"
     ],
-    "run_at": "2026-10-10T21:01:08+00:00"
+    "run_at": "2026-10-10T21:29:27+00:00"
   },
   "summary": {
     "documents": 40,
     "fields": 400,
-    "fields_ok": 334,
+    "fields_ok": 291,
     "fields_anomaly": 8,
-    "fields_false_alarm": 16,
-    "fields_caught": 34,
-    "fields_silent": 8,
-    "field_accuracy": 0.895,
-    "silent_errors": 8,
-    "silent_error_rate": 0.02,
-    "error_catch_rate": 0.8095,
-    "fields_flagged_rate": 0.145,
-    "false_alarm_rate": 0.04,
-    "straight_through_rate": 0.7368,
+    "fields_false_alarm": 53,
+    "fields_caught": 48,
+    "fields_silent": 0,
+    "field_accuracy": 0.88,
+    "silent_errors": 0,
+    "silent_error_rate": 0.0,
+    "error_catch_rate": 1.0,
+    "fields_flagged_rate": 0.2725,
+    "false_alarm_rate": 0.1325,
+    "straight_through_rate": 0.7105,
     "auto_approved_fully_correct": 1.0,
     "traps": 2,
     "traps_caught": 2,
     "failed_documents": 0,
-    "cost_per_doc_usd": 0.00589,
-    "total_cost_usd": 0.2356,
-    "duration_avg_ms": 5003.2,
-    "duration_p95_ms": 5885.8
+    "cost_per_doc_usd": 0.00585,
+    "total_cost_usd": 0.234,
+    "duration_avg_ms": 5018.8,
+    "duration_p95_ms": 6089.2
   },
   "by_field": [
     {
       "field": "vendor",
-      "ok": 40,
+      "ok": 30,
       "anomaly": 0,
-      "false_alarm": 0,
+      "false_alarm": 10,
       "caught": 0,
       "silent": 0,
       "accuracy": 1.0
     },
     {
       "field": "invoice_number",
-      "ok": 31,
+      "ok": 30,
       "anomaly": 0,
-      "false_alarm": 1,
-      "caught": 7,
-      "silent": 1,
-      "accuracy": 0.8
+      "false_alarm": 0,
+      "caught": 10,
+      "silent": 0,
+      "accuracy": 0.75
     },
     {
       "field": "invoice_date",
-      "ok": 35,
+      "ok": 30,
       "anomaly": 0,
-      "false_alarm": 0,
-      "caught": 2,
-      "silent": 3,
-      "accuracy": 0.875
+      "false_alarm": 2,
+      "caught": 8,
+      "silent": 0,
+      "accuracy": 0.8
     },
     {
       "field": "due_date",
-      "ok": 36,
+      "ok": 30,
       "anomaly": 0,
-      "false_alarm": 0,
-      "caught": 2,
-      "silent": 2,
-      "accuracy": 0.9
+      "false_alarm": 5,
+      "caught": 5,
+      "silent": 0,
+      "accuracy": 0.875
     },
     {
       "field": "currency",
-      "ok": 40,
+      "ok": 30,
       "anomaly": 0,
-      "false_alarm": 0,
+      "false_alarm": 10,
       "caught": 0,
       "silent": 0,
       "accuracy": 1.0
     },
     {
       "field": "subtotal",
-      "ok": 29,
+      "ok": 28,
       "anomaly": 2,
       "false_alarm": 3,
-      "caught": 6,
+      "caught": 7,
       "silent": 0,
-      "accuracy": 0.85
+      "accuracy": 0.825
     },
     {
       "field": "discount",
-      "ok": 31,
+      "ok": 28,
       "anomaly": 2,
-      "false_alarm": 5,
-      "caught": 2,
+      "false_alarm": 7,
+      "caught": 3,
       "silent": 0,
-      "accuracy": 0.95
+      "accuracy": 0.925
     },
     {
       "field": "tax",
-      "ok": 31,
+      "ok": 27,
       "anomaly": 2,
-      "false_alarm": 1,
-      "caught": 6,
+      "false_alarm": 7,
+      "caught": 4,
       "silent": 0,
-      "accuracy": 0.85
+      "accuracy": 0.9
     },
     {
       "field": "total",
-      "ok": 31,
+      "ok": 28,
       "anomaly": 2,
-      "false_alarm": 6,
+      "false_alarm": 9,
       "caught": 1,
       "silent": 0,
       "accuracy": 0.975
@@ -128,8 +128,8 @@
       "ok": 30,
       "anomaly": 0,
       "false_alarm": 0,
-      "caught": 8,
-      "silent": 2,
+      "caught": 10,
+      "silent": 0,
       "accuracy": 0.75
     }
   ],
@@ -146,13 +146,13 @@
       "documents": 12,
       "field_accuracy": 1.0,
       "silent_errors": 0,
-      "straight_through_rate": 1.0
+      "straight_through_rate": 0.9167
     },
     {
       "group": "hard_scan",
       "documents": 10,
-      "field_accuracy": 0.58,
-      "silent_errors": 8,
+      "field_accuracy": 0.52,
+      "silent_errors": 0,
       "straight_through_rate": 0.0
     }
   ],
@@ -176,8 +176,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.006218,
-      "duration_ms": 4744.4,
+      "cost_usd": 0.005948,
+      "duration_ms": 4508.0,
       "error": null,
       "failed_checks": []
     },
@@ -200,8 +200,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.005338,
-      "duration_ms": 4783.4,
+      "cost_usd": 0.004933,
+      "duration_ms": 4170.6,
       "error": null,
       "failed_checks": []
     },
@@ -225,7 +225,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.006717,
-      "duration_ms": 5115.4,
+      "duration_ms": 5101.1,
       "error": null,
       "failed_checks": []
     },
@@ -248,8 +248,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.006228,
-      "duration_ms": 6051.2,
+      "cost_usd": 0.005683,
+      "duration_ms": 5368.6,
       "error": null,
       "failed_checks": []
     },
@@ -272,8 +272,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.006259,
-      "duration_ms": 4660.1,
+      "cost_usd": 0.005854,
+      "duration_ms": 4007.1,
       "error": null,
       "failed_checks": []
     },
@@ -296,8 +296,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.006135,
-      "duration_ms": 4349.0,
+      "cost_usd": 0.006405,
+      "duration_ms": 4794.4,
       "error": null,
       "failed_checks": []
     },
@@ -321,7 +321,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.005296,
-      "duration_ms": 4734.1,
+      "duration_ms": 4624.1,
       "error": null,
       "failed_checks": []
     },
@@ -345,7 +345,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.006547,
-      "duration_ms": 4871.5,
+      "duration_ms": 4847.8,
       "error": null,
       "failed_checks": [
         "total_math"
@@ -370,8 +370,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.005623,
-      "duration_ms": 5227.2,
+      "cost_usd": 0.005888,
+      "duration_ms": 5682.7,
       "error": null,
       "failed_checks": []
     },
@@ -395,7 +395,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.006874,
-      "duration_ms": 5467.8,
+      "duration_ms": 5170.4,
       "error": null,
       "failed_checks": []
     },
@@ -418,8 +418,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.006343,
-      "duration_ms": 4722.9,
+      "cost_usd": 0.006073,
+      "duration_ms": 4314.7,
       "error": null,
       "failed_checks": []
     },
@@ -442,8 +442,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.005805,
-      "duration_ms": 5547.6,
+      "cost_usd": 0.005535,
+      "duration_ms": 5171.4,
       "error": null,
       "failed_checks": []
     },
@@ -467,7 +467,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.006681,
-      "duration_ms": 4997.8,
+      "duration_ms": 5059.1,
       "error": null,
       "failed_checks": []
     },
@@ -490,8 +490,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.005726,
-      "duration_ms": 5378.5,
+      "cost_usd": 0.005506,
+      "duration_ms": 5097.9,
       "error": null,
       "failed_checks": []
     },
@@ -514,8 +514,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.006595,
-      "duration_ms": 5093.6,
+      "cost_usd": 0.006325,
+      "duration_ms": 4601.0,
       "error": null,
       "failed_checks": []
     },
@@ -539,7 +539,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.006244,
-      "duration_ms": 4535.1,
+      "duration_ms": 4528.2,
       "error": null,
       "failed_checks": []
     },
@@ -562,8 +562,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.005931,
-      "duration_ms": 5714.1,
+      "cost_usd": 0.005661,
+      "duration_ms": 6255.0,
       "error": null,
       "failed_checks": []
     },
@@ -586,8 +586,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.006069,
-      "duration_ms": 4366.9,
+      "cost_usd": 0.006234,
+      "duration_ms": 4552.4,
       "error": null,
       "failed_checks": []
     },
@@ -611,7 +611,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.005211,
-      "duration_ms": 4401.3,
+      "duration_ms": 4484.6,
       "error": null,
       "failed_checks": []
     },
@@ -634,8 +634,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.006248,
-      "duration_ms": 4649.6,
+      "cost_usd": 0.006738,
+      "duration_ms": 5240.3,
       "error": null,
       "failed_checks": []
     },
@@ -659,7 +659,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.006205,
-      "duration_ms": 3789.0,
+      "duration_ms": 4452.2,
       "error": null,
       "failed_checks": []
     },
@@ -682,8 +682,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.00539,
-      "duration_ms": 4049.5,
+      "cost_usd": 0.00512,
+      "duration_ms": 4453.6,
       "error": null,
       "failed_checks": []
     },
@@ -707,7 +707,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.006077,
-      "duration_ms": 4439.9,
+      "duration_ms": 4452.6,
       "error": null,
       "failed_checks": [
         "total_math"
@@ -732,8 +732,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.005456,
-      "duration_ms": 4761.3,
+      "cost_usd": 0.005186,
+      "duration_ms": 4517.2,
       "error": null,
       "failed_checks": []
     },
@@ -756,8 +756,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.00651,
-      "duration_ms": 4906.0,
+      "cost_usd": 0.006785,
+      "duration_ms": 5173.2,
       "error": null,
       "failed_checks": []
     },
@@ -780,8 +780,8 @@
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.005839,
-      "duration_ms": 4039.3,
+      "cost_usd": 0.006244,
+      "duration_ms": 4631.4,
       "error": null,
       "failed_checks": []
     },
@@ -805,7 +805,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.005681,
-      "duration_ms": 5298.9,
+      "duration_ms": 5309.2,
       "error": null,
       "failed_checks": []
     },
@@ -829,7 +829,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.006787,
-      "duration_ms": 5134.9,
+      "duration_ms": 5107.3,
       "error": null,
       "failed_checks": []
     },
@@ -839,7 +839,7 @@
       "trap": false,
       "country": "DE",
       "layout": "band",
-      "status": "auto_approved",
+      "status": "needs_review",
       "cells": {
         "vendor": "ok",
         "invoice_number": "ok",
@@ -848,14 +848,16 @@
         "currency": "ok",
         "subtotal": "ok",
         "discount": "ok",
-        "tax": "ok",
+        "tax": "false_alarm",
         "total": "ok",
         "line_items": "ok"
       },
-      "cost_usd": 0.005551,
-      "duration_ms": 5112.0,
+      "cost_usd": 0.005786,
+      "duration_ms": 5555.3,
       "error": null,
-      "failed_checks": []
+      "failed_checks": [
+        "evidence_match"
+      ]
     },
     {
       "file": "INV030.pdf",
@@ -877,7 +879,7 @@
         "line_items": "ok"
       },
       "cost_usd": 0.006666,
-      "duration_ms": 5042.2,
+      "duration_ms": 5034.6,
       "error": null,
       "failed_checks": []
     },
@@ -889,24 +891,26 @@
       "layout": "band",
       "status": "needs_review",
       "cells": {
-        "vendor": "ok",
-        "invoice_number": "silent",
+        "vendor": "false_alarm",
+        "invoice_number": "caught",
         "invoice_date": "caught",
-        "due_date": "silent",
-        "currency": "ok",
+        "due_date": "caught",
+        "currency": "false_alarm",
         "subtotal": "false_alarm",
-        "discount": "ok",
-        "tax": "ok",
-        "total": "ok",
+        "discount": "false_alarm",
+        "tax": "false_alarm",
+        "total": "false_alarm",
         "line_items": "caught"
       },
-      "cost_usd": 0.004944,
-      "duration_ms": 4682.4,
+      "cost_usd": 0.004904,
+      "duration_ms": 4707.1,
       "error": null,
       "failed_checks": [
         "evidence_match",
+        "image_quality",
         "items_sum",
-        "model_uncertain"
+        "model_uncertain",
+        "number_format"
       ]
     },
     {
@@ -917,25 +921,26 @@
       "layout": "band",
       "status": "needs_review",
       "cells": {
-        "vendor": "ok",
+        "vendor": "false_alarm",
         "invoice_number": "caught",
-        "invoice_date": "ok",
-        "due_date": "ok",
-        "currency": "ok",
+        "invoice_date": "false_alarm",
+        "due_date": "false_alarm",
+        "currency": "false_alarm",
         "subtotal": "caught",
         "discount": "caught",
         "tax": "caught",
         "total": "false_alarm",
         "line_items": "caught"
       },
-      "cost_usd": 0.005219,
-      "duration_ms": 5474.2,
+      "cost_usd": 0.005164,
+      "duration_ms": 5265.6,
       "error": null,
       "failed_checks": [
         "evidence_match",
+        "image_quality",
         "items_sum",
+        "line_math",
         "number_format",
-        "tax_rate",
         "total_math"
       ]
     },
@@ -947,24 +952,24 @@
       "layout": "band",
       "status": "needs_review",
       "cells": {
-        "vendor": "ok",
+        "vendor": "false_alarm",
         "invoice_number": "caught",
-        "invoice_date": "silent",
-        "due_date": "silent",
-        "currency": "ok",
-        "subtotal": "false_alarm",
-        "discount": "false_alarm",
+        "invoice_date": "caught",
+        "due_date": "caught",
+        "currency": "false_alarm",
+        "subtotal": "caught",
+        "discount": "caught",
         "tax": "caught",
-        "total": "false_alarm",
+        "total": "caught",
         "line_items": "caught"
       },
-      "cost_usd": 0.005344,
-      "duration_ms": 5487.9,
+      "cost_usd": 0.005154,
+      "duration_ms": 5449.4,
       "error": null,
       "failed_checks": [
         "evidence_match",
+        "image_quality",
         "items_sum",
-        "number_format",
         "total_math"
       ]
     },
@@ -976,11 +981,11 @@
       "layout": "band",
       "status": "needs_review",
       "cells": {
-        "vendor": "ok",
+        "vendor": "false_alarm",
         "invoice_number": "caught",
-        "invoice_date": "ok",
-        "due_date": "ok",
-        "currency": "ok",
+        "invoice_date": "caught",
+        "due_date": "false_alarm",
+        "currency": "false_alarm",
         "subtotal": "caught",
         "discount": "caught",
         "tax": "false_alarm",
@@ -988,9 +993,11 @@
         "line_items": "caught"
       },
       "cost_usd": 0.004909,
-      "duration_ms": 4890.1,
+      "duration_ms": 4780.6,
       "error": null,
       "failed_checks": [
+        "evidence_match",
+        "image_quality",
         "items_sum",
         "number_format",
         "total_math"
@@ -1004,24 +1011,24 @@
       "layout": "band",
       "status": "needs_review",
       "cells": {
-        "vendor": "ok",
-        "invoice_number": "false_alarm",
-        "invoice_date": "ok",
-        "due_date": "ok",
-        "currency": "ok",
+        "vendor": "false_alarm",
+        "invoice_number": "caught",
+        "invoice_date": "caught",
+        "due_date": "caught",
+        "currency": "false_alarm",
         "subtotal": "caught",
         "discount": "false_alarm",
-        "tax": "caught",
+        "tax": "false_alarm",
         "total": "false_alarm",
         "line_items": "caught"
       },
-      "cost_usd": 0.006184,
-      "duration_ms": 6748.3,
+      "cost_usd": 0.005954,
+      "duration_ms": 6727.4,
       "error": null,
       "failed_checks": [
         "evidence_match",
+        "image_quality",
         "items_sum",
-        "model_uncertain",
         "number_format",
         "total_math"
       ]
@@ -1034,22 +1041,25 @@
       "layout": "compact",
       "status": "needs_review",
       "cells": {
-        "vendor": "ok",
+        "vendor": "false_alarm",
         "invoice_number": "caught",
-        "invoice_date": "ok",
-        "due_date": "ok",
-        "currency": "ok",
+        "invoice_date": "caught",
+        "due_date": "false_alarm",
+        "currency": "false_alarm",
         "subtotal": "caught",
         "discount": "false_alarm",
         "tax": "caught",
-        "total": "caught",
-        "line_items": "silent"
+        "total": "false_alarm",
+        "line_items": "caught"
       },
-      "cost_usd": 0.005449,
-      "duration_ms": 5744.2,
+      "cost_usd": 0.005709,
+      "duration_ms": 6080.5,
       "error": null,
       "failed_checks": [
+        "date_valid",
         "evidence_match",
+        "image_quality",
+        "items_sum",
         "number_format",
         "total_math"
       ]
@@ -1062,24 +1072,24 @@
       "layout": "compact",
       "status": "needs_review",
       "cells": {
-        "vendor": "ok",
+        "vendor": "false_alarm",
         "invoice_number": "caught",
         "invoice_date": "caught",
         "due_date": "caught",
-        "currency": "ok",
+        "currency": "false_alarm",
         "subtotal": "caught",
         "discount": "false_alarm",
-        "tax": "caught",
+        "tax": "false_alarm",
         "total": "false_alarm",
         "line_items": "caught"
       },
-      "cost_usd": 0.005319,
-      "duration_ms": 5584.0,
+      "cost_usd": 0.005249,
+      "duration_ms": 5295.7,
       "error": null,
       "failed_checks": [
-        "evidence_match",
+        "image_quality",
         "items_sum",
-        "model_uncertain",
+        "line_math",
         "number_format",
         "total_math"
       ]
@@ -1092,24 +1102,25 @@
       "layout": "classic",
       "status": "needs_review",
       "cells": {
-        "vendor": "ok",
-        "invoice_number": "ok",
-        "invoice_date": "silent",
+        "vendor": "false_alarm",
+        "invoice_number": "caught",
+        "invoice_date": "caught",
         "due_date": "caught",
-        "currency": "ok",
+        "currency": "false_alarm",
         "subtotal": "false_alarm",
-        "discount": "ok",
-        "tax": "ok",
-        "total": "ok",
+        "discount": "false_alarm",
+        "tax": "false_alarm",
+        "total": "false_alarm",
         "line_items": "caught"
       },
-      "cost_usd": 0.005059,
-      "duration_ms": 4988.4,
+      "cost_usd": 0.004909,
+      "duration_ms": 4682.9,
       "error": null,
       "failed_checks": [
-        "date_valid",
-        "items_sum",
-        "line_math"
+        "evidence_match",
+        "image_quality",
+        "line_math",
+        "model_uncertain"
       ]
     },
     {
@@ -1120,22 +1131,26 @@
       "layout": "compact",
       "status": "needs_review",
       "cells": {
-        "vendor": "ok",
+        "vendor": "false_alarm",
         "invoice_number": "caught",
-        "invoice_date": "ok",
-        "due_date": "ok",
-        "currency": "ok",
+        "invoice_date": "false_alarm",
+        "due_date": "false_alarm",
+        "currency": "false_alarm",
         "subtotal": "caught",
         "discount": "false_alarm",
         "tax": "caught",
         "total": "false_alarm",
         "line_items": "caught"
       },
-      "cost_usd": 0.005629,
-      "duration_ms": 5877.1,
+      "cost_usd": 0.005624,
+      "duration_ms": 5929.2,
       "error": null,
       "failed_checks": [
+        "evidence_match",
+        "image_quality",
         "items_sum",
+        "line_math",
+        "model_uncertain",
         "number_format",
         "total_math"
       ]
@@ -1148,21 +1163,23 @@
       "layout": "band",
       "status": "needs_review",
       "cells": {
-        "vendor": "ok",
+        "vendor": "false_alarm",
         "invoice_number": "caught",
-        "invoice_date": "silent",
-        "due_date": "ok",
-        "currency": "ok",
-        "subtotal": "ok",
-        "discount": "ok",
-        "tax": "ok",
-        "total": "ok",
-        "line_items": "silent"
+        "invoice_date": "caught",
+        "due_date": "false_alarm",
+        "currency": "false_alarm",
+        "subtotal": "false_alarm",
+        "discount": "false_alarm",
+        "tax": "false_alarm",
+        "total": "false_alarm",
+        "line_items": "caught"
       },
-      "cost_usd": 0.005274,
-      "duration_ms": 4668.5,
+      "cost_usd": 0.005489,
+      "duration_ms": 5567.6,
       "error": null,
       "failed_checks": [
+        "evidence_match",
+        "image_quality",
         "number_format"
       ]
     }
