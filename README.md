@@ -2,8 +2,6 @@
 
 An AI document pipeline that reads invoices (digital PDFs, scans and phone photos) and turns them into structured data for accounting. Every extracted field is checked in code before anyone trusts it, and anything the checks can't confirm goes to a person on a review screen built around the document itself.
 
-![Folio results](https://raw.githubusercontent.com/anjeesanjeet/folio-invoice-extraction/main/outputs/thumbnail.png)
-
 ## The problem
 
 Finance teams still key in invoices by hand. AI can read them in seconds, but an AI that is right 97% of the time is not good enough on its own: one wrong digit in a total, a misread date or an invented line item flows straight into the books, and nobody notices until a payment or an audit goes wrong.
