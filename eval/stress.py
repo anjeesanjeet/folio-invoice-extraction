@@ -163,14 +163,14 @@ def run() -> dict:
         base = bases.get(t["file"])
         used_model += base is not None
         base = base or printed_extraction(t)
-        if any(v["status"] != "ok" for v in validate(base, doc.kind, doc.text, vendors=vendors)["fields"].values()):
+        if any(v["status"] != "ok" for v in validate(base, doc.kind, doc.text, vendors=vendors, sharpness=doc.sharpness, min_sharpness=s.min_sharpness)["fields"].values()):
             continue                                    # only start from extractions that passed cleanly
         for name, kind, fn in MUTATIONS:
             ext = copy.deepcopy(base)
             field = fn(ext, t, rng)
             if field is None:
                 continue
-            res = validate(ext, doc.kind, doc.text, vendors=vendors)
+            res = validate(ext, doc.kind, doc.text, vendors=vendors, sharpness=doc.sharpness, min_sharpness=s.min_sharpness)
             caught = res["fields"][field]["status"] != "ok"
             by = sorted({c["name"] for c in res["checks"] if not c["passed"] and field in c["fields"]})
             rows.append({"file": t["file"], "doc_kind": t["kind"], "mutation": name, "type": kind, "field": field,

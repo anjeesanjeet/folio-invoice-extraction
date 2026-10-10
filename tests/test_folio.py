@@ -152,3 +152,15 @@ def test_stress_runs_offline(samples, settings, monkeypatch):
     monkeypatch.setattr(st, "get_settings", lambda: settings)
     p = st.run()
     assert p["overall"]["n"] > 50 and p["by_kind"]["digital"]["rate"] == 1.0
+
+
+def test_poor_scan_goes_to_review(samples):
+    d, truth = samples
+    hard = next(x for x in truth if x["kind"] == "hard_scan")
+    ok = next(x for x in truth if x["kind"] == "scan")
+    dh, do = load(d / hard["file"]), load(d / ok["file"])
+    assert dh.sharpness < 280 <= do.sharpness
+    res = validate(perfect_extraction(hard), "scan", vendors=vendor_master(), sharpness=dh.sharpness, min_sharpness=280)
+    assert all(v["status"] == "review" for v in res["fields"].values())
+    res = validate(perfect_extraction(ok), "scan", vendors=vendor_master(), sharpness=do.sharpness, min_sharpness=280)
+    assert not flagged(res)

@@ -46,6 +46,7 @@ class Settings:
     max_pages: int = field(default_factory=lambda: _int("MAX_PAGES", 3))
     render_scale: float = field(default_factory=lambda: _float("RENDER_SCALE", 1.6))
     max_tax_rate: float = field(default_factory=lambda: _float("MAX_TAX_RATE", 0.30))
+    min_sharpness: float = field(default_factory=lambda: _float("MIN_SHARPNESS", 280.0))
 
     host: str = field(default_factory=lambda: _env("HOST", "127.0.0.1"))
     port: int = field(default_factory=lambda: _int("PORT", 8200))

@@ -15,7 +15,7 @@ from app.db import connect, events_for, get_doc
 from app.pipeline import STEPS
 
 CHECKS = ["required", "date_valid", "evidence_match", "in_document", "line_math", "items_sum", "total_math",
-          "tax_rate", "currency", "model_uncertain", "vendor_known", "number_format", "currency_match", "duplicate"]
+          "tax_rate", "currency", "model_uncertain", "vendor_known", "number_format", "currency_match", "duplicate", "image_quality"]
 
 CLASSDEFS = """
     classDef io fill:#1C2029,stroke:#E9C46A,color:#F2EDE3

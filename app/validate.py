@@ -101,7 +101,8 @@ def match_vendor(name: str, vendors: list[dict]) -> tuple[dict | None, dict | No
 
 
 def validate(ext: dict, kind: str, text_layer: str = "", max_tax_rate: float = 0.30,
-             vendors: list[dict] | None = None) -> dict:
+             vendors: list[dict] | None = None, sharpness: float | None = None,
+             min_sharpness: float | None = None) -> dict:
     """Returns {"checks": [...], "fields": {field: {"status": ok|review, "reasons": [...]}}}."""
     reasons: dict[str, list[str]] = {f: [] for f in ALL_FIELDS}
     checks: list[dict] = []
@@ -188,5 +189,8 @@ def validate(ext: dict, kind: str, text_layer: str = "", max_tax_rate: float = 0
         if f in reasons:
             check("model_uncertain", False, [f], "flagged by the model as hard to read")
 
+    if kind != "digital" and sharpness is not None and min_sharpness is not None:
+        check("image_quality", sharpness >= min_sharpness, list(ALL_FIELDS),
+              f"poor image quality (sharpness {sharpness:.0f}, minimum {min_sharpness:.0f}): check against the image")
     fields = {f: {"status": "review" if reasons[f] else "ok", "reasons": sorted(set(reasons[f]))} for f in ALL_FIELDS}
     return {"checks": checks, "fields": fields}

@@ -15,9 +15,9 @@ from app.validate import validate
 
 # The pipeline's steps, in order. The architecture flowchart is generated from this list.
 STEPS = [
-    ("ingest", "Read the file", "PDF text layer kept; scans rendered to images"),
+    ("ingest", "Read the file", "PDF text layer kept; scans rendered and graded for image quality"),
     ("extract", "Extract fields with a vision model", "every value returned with the exact text it came from"),
-    ("validate", "Check every field in code", "arithmetic, dates, evidence, PDF text, vendor master, duplicates"),
+    ("validate", "Check every field in code", "arithmetic, dates, evidence, PDF text, vendor master, duplicates, image quality"),
     ("route", "Route the document", "all checks pass: auto-approved; any doubt: human review"),
     ("export", "Export", "CSV and Excel; human corrections override extraction"),
 ]
@@ -65,7 +65,8 @@ class Pipeline:
                     self.page_path(doc_id, i).write_bytes(png)
                 update_doc(conn, doc_id, kind=d.kind, pages=len(d.pages))
                 log_event(conn, doc_id, "ingest", "ok", f"{d.kind}, {len(d.pages)} page(s)"
-                          + (f", {len(d.text)} chars of text" if d.text else ""), (time.perf_counter() - t) * 1000)
+                          + (f", {len(d.text)} chars of text" if d.text else "")
+                          + (f", sharpness {d.sharpness:.0f}" if d.sharpness is not None else ""), (time.perf_counter() - t) * 1000)
 
                 t = time.perf_counter()
                 res = extractor.extract(self.provider, d.pages, d.text)
@@ -78,7 +79,7 @@ class Pipeline:
                           (time.perf_counter() - t) * 1000, res.cost_usd)
 
                 t = time.perf_counter()
-                val = validate(ext, d.kind, d.text, self.s.max_tax_rate, self.s.vendors())
+                val = validate(ext, d.kind, d.text, self.s.max_tax_rate, self.s.vendors(), d.sharpness, self.s.min_sharpness)
                 dup = self._duplicate_of(conn, doc_id, ext)
                 val["checks"].append({"name": "duplicate", "passed": dup is None, "fields": ["invoice_number"],
                                       "detail": f"same vendor and number as document {dup}" if dup else ""})

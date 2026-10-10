@@ -11,7 +11,7 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 copy .env.example .env        # then add ANTHROPIC_API_KEY
-python -m pytest -q           # 14 tests, no API key needed
+python -m pytest -q           # 15 tests, no API key needed
 python -m app.main            # open http://127.0.0.1:8200
 ```
 
@@ -85,6 +85,10 @@ Creates `outputs/thumbnail.png` (1600 x 1200), `dashboard_full.png`, `review_pag
 | number_format | invoice number doesn't fit that vendor's usual format |
 | currency_match | currency differs from the one that vendor bills in |
 | duplicate | same vendor and invoice number as an earlier document (double payment) |
+| image_quality | scans: the image is too blurry or low-resolution to trust; the whole invoice goes to a person |
+
+The image-quality threshold (`MIN_SHARPNESS` in `.env`, default 280) is calibrated on the sample set, where ordinary
+scans score 370-500 and poor scans 175-190. For a real client, calibrate it on a sample of their own documents.
 
 The vendor master is `config/vendors.json`: one entry per supplier with its name, aliases, invoice-number
 pattern (a regular expression) and currency. Delete the file to switch these checks off.

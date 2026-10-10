@@ -48,8 +48,8 @@ function renderPage(d) {
   $("banner").hidden = !!ev;
   if (s) {
     $("kicker").textContent = `Evaluation · ${ev.meta.documents} invoices · ${ev.meta.model}`;
-    $("headline").innerHTML = `<em>${s.silent_errors}</em> silent error${s.silent_errors === 1 ? "" : "s"} in ${s.fields} extracted fields.`;
-    $("lede").textContent = `${pct(s.field_accuracy, 1)} of fields were right first time. Of the extraction errors, ${pct(s.error_catch_rate)} were caught by checks and sent to a person; ${pct(s.straight_through_rate)} of normal invoices needed no human at all.`;
+    $("headline").innerHTML = `<em>${pct(s.auto_approved_fully_correct)}</em> of the invoices Folio approved on its own were fully correct.`;
+    $("lede").textContent = `${pct(s.straight_through_rate)} of invoices needed no human at all. Anything the checks couldn't confirm, including every poor-quality scan, went to a person. ${s.silent_errors} of ${s.fields} fields were wrong without being flagged.`;
   }
   $("figures").innerHTML = [
     [s ? pct(s.field_accuracy, 1) : "–", "fields correct before review"],
@@ -94,9 +94,9 @@ function renderThumb(d) {
   document.body.classList.add("thumb-mode");
   $("thumb").hidden = false;
   const ev = d.eval, s = ev?.summary;
-  $("tBig").textContent = s ? s.silent_errors : "–";
-  $("tCap").innerHTML = s ? `silent error${s.silent_errors === 1 ? "" : "s"}<br><span>in ${s.fields} extracted fields</span>` : "silent errors";
-  $("tFigs").innerHTML = [[s ? pct(s.field_accuracy, 1) : "–", "fields correct"], [s ? pct(s.straight_through_rate) : "–", "auto-approved"],
+  $("tBig").textContent = s ? pct(s.auto_approved_fully_correct) : "–";
+  $("tCap").innerHTML = `of auto-approved invoices<br><span>were fully correct</span>`;
+  $("tFigs").innerHTML = [[s ? pct(s.straight_through_rate) : "–", "no human needed"], [s ? s.silent_errors : "–", "silent errors"],
     [s ? "$" + s.cost_per_doc_usd.toFixed(3) : "–", "per invoice"]].map(([v, l]) => `<div><b class="num">${v}</b><span>${l}</span></div>`).join("");
   $("tLabel").textContent = s ? `${s.documents} invoices × 10 fields, scored against ground truth` : "Every field of every invoice";
   matrixT($("tMatrix"), ev?.documents);

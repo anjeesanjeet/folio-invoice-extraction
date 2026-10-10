@@ -21,7 +21,7 @@ Folio runs every document through the same pipeline:
 
 - **Ingest:** digital PDFs keep their text layer; scans and photos are treated as images.
 - **Extract:** a vision model reads the page and returns every field (vendor, number, dates, currency, subtotal, discount, tax, total and line items) together with the exact text it read each value from.
-- **Check in code:** fourteen checks run on every field. Line items must multiply and add up, subtotal minus discount plus tax must equal the total, dates must parse and make sense, every value must match the text it came from, on digital PDFs every value must actually appear in the document's text layer, and the vendor must match the supplier list, with that supplier's usual invoice-number format and currency. Duplicate invoices are flagged before they can be paid twice.
+- **Check in code:** fifteen checks run on every field. Line items must multiply and add up, subtotal minus discount plus tax must equal the total, dates must parse and make sense, every value must match the text it came from, on digital PDFs every value must actually appear in the document's text layer, and the vendor must match the supplier list, with that supplier's usual invoice-number format and currency. Duplicate invoices are flagged before they can be paid twice, and scans too blurry to trust are sent to a person before anything is extracted from them on trust.
 - **Route:** if every field passes, the invoice is auto-approved. If any field is in doubt, only that field is highlighted for a person, with the reason shown.
 - **Review and export:** a review screen shows the invoice next to its fields; people correct values and approve. Approved data exports to Excel and CSV, with human corrections taking priority.
 
